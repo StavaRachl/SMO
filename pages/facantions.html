@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Записаться — SMO</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>SMO</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="board.html">Доска почета</a></li>
+                <li><a href="пошелнахуй.html">Пошел нахуй</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>ЗАПИСАТЬСЯ</h1>
+            <p>Заполни форму. Майонез уже греется.</p>
+        </section>
+        <section class="testimonial">
+            <form id="signupForm" style="max-width:500px; margin:0 auto; text-align:left;">
+                <p><label>ФИО:<br><input type="text" required style="width:100%; padding:10px; font-size:16px; border:3px solid black;"></label></p>
+                <p><label>Вакансия:<br>
+                    <select required style="width:100%; padding:10px; font-size:16px; border:3px solid black;">
+                        <option value="">-- выбери судьбу --</option>
+                        <option>Дегустатор майонеза</option>
+                        <option>Оператор дрона с дивана</option>
+                        <option>Штурмовик пельменей</option>
+                        <option>Старший по майонезу</option>
+                    </select>
+                </label></p>
+                <p><label>Любимый соус:<br><input type="text" placeholder="майонез" style="width:100%; padding:10px; font-size:16px; border:3px solid black;"></label></p>
+                <p><label>Готовность лежать на диване (1–10):<br><input type="range" min="1" max="10" value="10" style="width:100%;"></label></p>
+                <button type="submit" class="btn-buy">ОТПРАВИТЬ В КОСМОС</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 SMO. Форма никуда не отправляется. Как и ты.</p>
+    </footer>
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Заявка принята!\n\nМайонез уже в пути.\nОжидайте 3–5 рабочих лет.');
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>
